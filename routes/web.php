@@ -20,3 +20,7 @@ Route::get('/', function () {
 
 Route::get('index',[IndexController::class,'form']);
 Route::post('formdata',[IndexController::class,'forminsert']);
+Route::get('getdata',[IndexController::class,'getdata']);
+Route::get('edit/{id}',[IndexController::class,'edit']);
+Route::post('update/{id}',[IndexController::class,'update']);
+Route::get('delete/{id}',[IndexController::class,'delete']);
